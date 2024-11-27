@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="product-card.html">Product Card</a>
+      <a href="product-filter.html">Product Filter</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="order-confirmation.html">Order Confirmation</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Checkout Form</h1>
+    <form onsubmit="event.preventDefault(); window.location.href='order-confirmation.html';">
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Credit Card Number" required>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+</body>
+</html>
